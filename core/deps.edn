@@ -1,0 +1,10 @@
+{:deps {org.clojure/clojure       {:mvn/version "1.10.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.520"}
+        datascript                {:mvn/version "0.18.7"}
+        darkleaf/multidecorators  {:mvn/version "1.0.5"}
+        darkleaf/effect           {:mvn/version "0.0.5"}}
+
+ :aliases {:dev       {:extra-paths ["dev" "test"]}
+           :cljs-test {:extra-deps {olical/cljs-test-runner {:mvn/version "3.7.0"}}
+                       :main-opts  ["-m" "cljs-test-runner.main"
+                                    "-c" "test/cljs_compiler.edn"]}}}
